@@ -12,23 +12,35 @@ const loader = new GLTFLoader();
 
 export default function ModularMesh(props: ModularMeshProps) {
 
+    // Реф модели для применения эффектов.
     const modelRef = useRef()
 
+    // Нынешний эффект детали.
     const [status, setStatus] = useState<StatusEffect>()
+    // Стандартный эффект детали.
     const [defaultStatus, setDefaultStatus] = useState<StatusEffect>()
+    // Трехмерная модель детали.
     const [model, setModel] = useState<Group>()
+    // Массив точек, описывающих слоты, найденные на модели.
     const [interactables, setInteractables] = useState<Array<{ position: Vector3 | null, slot: string | null }>>([])
+    // Финальная точка перемещения детали.
     const [maxElevation, setMaxElevation] = useState<number[]>([0, 0, 0])
+    // Передвинута ли деталь.
     const [elevating, setElevating] = useState(false)
+    // Будет ли деталь анимирована для визуализации эффекта
     const [isAnimated, setIsAnimated] = useState(false)
+    // Анимировать ли деталь как выбранную.
     const [selected, setSelected] = useState(false)
+    // Пересекает ли курсор пользователя деталь.
     const [hovered, setHovered] = useState<boolean>(false)
 
+    // Положение детали.
     const { position } = useSpring({
         position: elevating && modelRef ? maxElevation : props.position,
         config: config.slow,
     })
 
+    // Инициализация стартовых эффектов.
     useEffect(() => {
         if (props.data.isMonitored) {
             setIsAnimated(true)
@@ -41,18 +53,14 @@ export default function ModularMesh(props: ModularMeshProps) {
         }
     }, [props.data.status])
 
+    // Стартовая инициализация основого состояния детали.
     useEffect(() => {
-
         if (!props.data) {
             return
         }
 
         props.debug && console.log("[DEBUG] Creating Modular Mesh for [" + props.data.name + "]")
 
-
-        if (props.data.isSelectable) {
-            // add highlights
-        }
         if (props.data.isMovable) {
             setIsAnimated(true)
             if (props.data.travelV3)
@@ -62,9 +70,11 @@ export default function ModularMesh(props: ModularMeshProps) {
             props.debug && console.log("[DEBUG] Movement animation for [" + props.data.name + "] was configured")
         }
 
+        // Модель гружу через GLTFLoader.load, так как у него есть колбек, в котором можно обработать куски модели. Если такое добавят в UseLoader, то нужно будет перейти на него.
         loader.load(props.data.path,
             (gltf) => {
                 setModel(gltf.scene)
+                // Обработка слотов в модели.
                 if (props.data.isParent) {
                     let slotInteractables = new Array<{ position: Vector3 | null, slot: string | null }>
                     gltf.scene.children.map((elem) => {
@@ -82,6 +92,7 @@ export default function ModularMesh(props: ModularMeshProps) {
         )
     }, [])
 
+    // Обнуление визуала детали при изменении выбранной детали, либо статуса детали.
     useEffect(() => {
         (modelRef.current as any).traverse((obj: { material: { emissive: { setRGB: (arg0: number, arg1: number, arg2: number) => void; }; needsUpdate: boolean; }; }) => {
             if (obj.material && obj.material.emissive) {
@@ -95,6 +106,7 @@ export default function ModularMesh(props: ModularMeshProps) {
 
     }, [selected, props.data.status])
 
+    // Чистка стейтов после выбора другой детали.
     useEffect(() => {
         if (props.data && props.selection && selected)
             if (props.selection.get !== props.data) {
@@ -104,6 +116,7 @@ export default function ModularMesh(props: ModularMeshProps) {
             }
     }, [props.selection && props.selection.get])
 
+    // Изменение курсора при пересечении детали.
     useEffect(() => {
         if (hovered) {
             if (props.data.isSelectable) {
@@ -116,6 +129,7 @@ export default function ModularMesh(props: ModularMeshProps) {
         return () => { document.body.style.cursor = 'auto' }
     }, [hovered])
 
+    // Обработка эффекта детали в каждом фрейме.
     useFrame((state, delta) => {
         if (!modelRef || !isAnimated) {
             return
