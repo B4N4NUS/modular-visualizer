@@ -1,0 +1,26 @@
+{
+    "name": "Drive frame",
+    "path": "/server/lp_drive_frame.glb",
+    "isMonitored": false,
+    "isSelectable": true,
+    "isMovable": true,
+    "travelV3": [
+        0,
+        0,
+        0.12
+    ],
+    "isMovedByDefault": true,
+    "isParent": true,
+    "components": [{
+        "name": "Drive",
+        "path": "/server/lp_drive.glb",
+        "slot": "slot_drive_1",
+        "isMonitored": true,
+        "status": "ok",
+        "isSelectable": true,
+        "message": "Works fine",
+        "isMovable": false,
+        "isMovedByDefault": false,
+        "isParent": false
+    }]
+}

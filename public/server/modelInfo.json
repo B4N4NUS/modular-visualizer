@@ -1,0 +1,493 @@
+{
+    "sceneName": "Server",
+    "models": [
+      {
+        "name": "Frame",
+        "path": "/server/lp_frame.glb",
+        "isMonitored": false,
+        "isSelectable": false,
+        "isMovable": false,
+        "isMovedByDefault": false,
+        "isParent": true,
+        "components": [
+          {
+            "name": "Drive frame 1",
+            "path": "/server/lp_drive_frame.glb",
+            "slot": "slot_drive_1",
+            "isMonitored": true,
+            "status": "warning",
+            "isSelectable": true,
+            "isMovable": true,
+            "travelV3": [
+              0,
+              0,
+              0.12
+            ],
+            "isMovedByDefault": false,
+            "isParent": true,
+            "components": [
+              {
+                "name": "Drive 1",
+                "path": "/server/lp_drive.glb",
+                "slot": "slot_drive_1",
+                "isMonitored": true,
+                "status": "error",
+                "isSelectable": true,
+                "message": "Cant read data from drive",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              }
+            ]
+          },
+          {
+            "name": "Drive frame 2",
+            "path": "/server/lp_drive_frame.glb",
+            "slot": "slot_drive_2",
+            "isMonitored": false,
+            "isSelectable": true,
+            "isMovable": true,
+            "travelV3": [
+              0,
+              0,
+              0.12
+            ],
+            "isMovedByDefault": true,
+            "isParent": true,
+            "components": [
+              {
+                "name": "Drive 2",
+                "path": "/server/lp_drive.glb",
+                "slot": "slot_drive_1",
+                "isMonitored": true,
+                "status": "ok",
+                "isSelectable": true,
+                "message": "Works fine",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              }
+            ]
+          },
+          {
+            "name": "Drive frame 3",
+            "path": "/server/lp_drive_frame.glb",
+            "slot": "slot_drive_3",
+            "isMonitored": false,
+            "isSelectable": true,
+            "isMovable": true,
+            "travelV3": [
+              0,
+              0,
+              0.12
+            ],
+            "isMovedByDefault": false,
+            "isParent": true,
+            "components": []
+          },
+          {
+            "name": "Drive frame 4",
+            "path": "/server/lp_drive_frame.glb",
+            "slot": "slot_drive_4",
+            "isMonitored": false,
+            "isSelectable": true,
+            "isMovable": true,
+            "travelV3": [
+              0,
+              0,
+              0.12
+            ],
+            "isMovedByDefault": true,
+            "isParent": true,
+            "components": [
+              {
+                "name": "Drive 3",
+                "path": "/server/lp_drive.glb",
+                "slot": "slot_drive_1",
+                "isMonitored": true,
+                "status": "warning",
+                "isSelectable": true,
+                "message": "Cant read data from drive",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              }
+            ]
+          },
+          {
+            "name": "Drive frame 5",
+            "path": "/server/lp_drive_frame.glb",
+            "slot": "slot_drive_5",
+            "isMonitored": false,
+            "isSelectable": true,
+            "isMovable": true,
+            "travelV3": [
+              0,
+              0,
+              0.12
+            ],
+            "isMovedByDefault": false,
+            "isParent": true,
+            "components": [
+              {
+                "name": "Drive 5",
+                "path": "/server/lp_drive.glb",
+                "slot": "slot_drive_1",
+                "isMonitored": true,
+                "status": "ok",
+                "isSelectable": true,
+                "message": "Works fine",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              }
+            ]
+          },
+          {
+            "name": "Drive frame 6",
+            "path": "/server/lp_drive_frame.glb",
+            "slot": "slot_drive_6",
+            "isMonitored": false,
+            "isSelectable": true,
+            "isMovable": true,
+            "travelV3": [
+              0,
+              0,
+              0.12
+            ],
+            "isMovedByDefault": true,
+            "isParent": true,
+            "components": []
+          },
+          {
+            "name": "Drive frame 7",
+            "path": "/server/lp_drive_frame.glb",
+            "slot": "slot_drive_7",
+            "isMonitored": false,
+            "isSelectable": true,
+            "isMovable": true,
+            "travelV3": [
+              0,
+              0,
+              0.12
+            ],
+            "isMovedByDefault": true,
+            "isParent": true,
+            "components": []
+          },
+          {
+            "name": "Drive frame 8",
+            "path": "/server/lp_drive_frame.glb",
+            "slot": "slot_drive_8",
+            "isMonitored": false,
+            "isSelectable": true,
+            "isMovable": true,
+            "travelV3": [
+              0,
+              0,
+              0.12
+            ],
+            "isMovedByDefault": true,
+            "isParent": true,
+            "components": []
+          },
+          {
+            "name": "vent 1",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_1",
+            "isMonitored": true,
+            "status": "error",
+            "isSelectable": true,
+            "message": "Not spinning",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 2",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_2",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "working properly",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 3",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_3",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "working properly",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 4",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_4",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "working properly",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 5",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_5",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "working properly",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 6",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_6",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "working properly",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 7",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_7",
+            "isMonitored": true,
+            "status": "error",
+            "isSelectable": true,
+            "message": "Not spinning",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 8",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_8",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "Not spinning",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 9",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_9",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "Not spinning",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 10",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_10",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "Not spinning",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 11",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_11",
+            "isMonitored": true,
+            "status": "warning",
+            "isSelectable": true,
+            "message": "Not spinning",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "vent 12",
+            "path": "/server/lp_vent.glb",
+            "slot": "slot_vent_12",
+            "isMonitored": true,
+            "status": "warning",
+            "isSelectable": true,
+            "message": "Not spinning",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "power supply 1",
+            "path": "/server/lp_power_supply.glb",
+            "slot": "slot_power_supply_1",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "power supply 2",
+            "path": "/server/lp_power_supply.glb",
+            "slot": "slot_power_supply_2",
+            "isMonitored": true,
+            "status": "warning",
+            "isSelectable": true,
+            "message": "Low output voltage",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+          },
+          {
+            "name": "motherboard",
+            "path": "/server/lp_motherboard.glb",
+            "slot": "slot_motherboard",
+            "isMonitored": false,
+            "isSelectable": true,
+            "message": "This is your motherboard",
+            "isMovable": true,
+            "travelV3": [
+              1,
+              0.5,
+              0.5
+            ],
+            "isMovedByDefault": false,
+            "isParent": true,
+            "components": [
+              {
+                "name": "AMD Ryzen 7900",
+                "path": "/server/lp_cpu.glb",
+                "slot": "slot_cpu_1",
+                "isMonitored": true,
+                "status": "warning",
+                "isSelectable": true,
+                "message": "Detected throttling due to overheating",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              },
+              {
+                "name": "Intel I9 10900",
+                "path": "/server/lp_cpu.glb",
+                "slot": "slot_cpu_2",
+                "isMonitored": true,
+                "status": "ok",
+                "isSelectable": true,
+                "message": "This CPU is currently ok",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              },
+              {
+                "name": "AMD Radeon R5 Entertainment Series",
+                "path": "/server/lp_ram.glb",
+                "slot": "slot_ram_1",
+                "isMonitored": true,
+                "status": "ok",
+                "isSelectable": true,
+                "message": "Ram is currently ok",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              },
+              {
+                "name": "AMD Radeon R5 Entertainment Series",
+                "path": "/server/lp_ram.glb",
+                "slot": "slot_ram_2",
+                "isMonitored": true,
+                "status": "ok",
+                "isSelectable": true,
+                "message": "Ram is currently ok",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              },
+              {
+                "name": "AMD Radeon R5 Entertainment Series",
+                "path": "/server/lp_ram.glb",
+                "slot": "slot_ram_3",
+                "isMonitored": true,
+                "status": "ok",
+                "isSelectable": true,
+                "message": "Ram is currently ok",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              },
+              {
+                "name": "AMD Radeon R5 Entertainment Series",
+                "path": "/server/lp_ram.glb",
+                "slot": "slot_ram_4",
+                "isMonitored": true,
+                "status": "ok",
+                "isSelectable": true,
+                "message": "Ram is currently ok",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              },
+              {
+                "name": "AMD Radeon R5 Entertainment Series",
+                "path": "/server/lp_ram.glb",
+                "slot": "slot_ram_5",
+                "isMonitored": true,
+                "status": "error",
+                "isSelectable": true,
+                "message": "Ram broke",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              },
+              {
+                "name": "AMD Radeon R5 Entertainment Series",
+                "path": "/server/lp_ram.glb",
+                "slot": "slot_ram_6",
+                "isMonitored": true,
+                "status": "ok",
+                "isSelectable": true,
+                "message": "Ram is currently ok",
+                "isMovable": false,
+                "isMovedByDefault": false,
+                "isParent": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cover",
+        "path": "/server/lp_cover.glb",
+        "isMonitored": false,
+        "isSelectable": true,
+        "isMovable": true,
+        "travelV3": [
+          0,
+          0.5,
+          0
+        ],
+        "isMovedByDefault": true,
+        "isParent": false
+      }
+    ]
+  }

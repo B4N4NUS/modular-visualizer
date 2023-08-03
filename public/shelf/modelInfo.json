@@ -1,0 +1,168 @@
+{
+  "sceneName": "Server shelf",
+  "models": [
+    {
+      "name": "Shelf",
+      "path": "/shelf/shelf.glb",
+      "isMonitored": false,
+      "isSelectable": true,
+      "isMovable": false,
+      "isParent": true,
+      "components": [
+        {
+          "name": "Some fancy server name 1",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_1",
+          "isMonitored": true,
+          "status": "off",
+          "isSelectable": true,
+          "message": "Turn on server to start monitoring process",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        },
+        {
+          "name": "Some fancy server name 2",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_2",
+          "isMonitored": true,
+          "status": "off",
+          "isSelectable": true,
+          "message": "Turn on server to start monitoring process",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        },
+        {
+          "name": "Some fancy server name 3",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_3",
+          "isMonitored": true,
+          "status": "off",
+          "isSelectable": true,
+          "message": "Turn on server to start monitoring process",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        },
+        {
+          "name": "Some fancy server name 4",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_4",
+          "isMonitored": true,
+          "status": "on",
+          "isSelectable": true,
+          "message": "Working great",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        },
+        {
+          "name": "Some fancy server name 5",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_5",
+          "isMonitored": true,
+          "status": "on",
+          "isSelectable": true,
+          "message": "Working great",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        },
+        {
+          "name": "Some fancy server name 6",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_6",
+          "isMonitored": true,
+          "status": "warning",
+          "isSelectable": true,
+          "message": "Something is wrong",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        },
+        {
+          "name": "Some fancy server name 7",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_7",
+          "isMonitored": true,
+          "status": "warning",
+          "isSelectable": true,
+          "message": "Something is wrong",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        },
+        {
+          "name": "Some fancy server name 8",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_8",
+          "isMonitored": true,
+          "status": "on",
+          "isSelectable": true,
+          "message": "Working great",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        },
+        {
+          "name": "Some fancy server name 10",
+          "path": "/shelf/lp_server.glb",
+          "slot": "slot_server_10",
+          "isMonitored": true,
+          "status": "error",
+          "isSelectable": true,
+          "message": "Working great",
+          "isMovable": true,
+          "travelV3": [
+            0,
+            0,
+            0.5
+          ],
+          "isMovedByDefault": false,
+          "isParent": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+    "name": "motherboard",
+    "path": "/server/lp_motherboard.glb",
+    "slot": "slot_motherboard",
+    "isMonitored": false,
+    "isSelectable": true,
+    "message": "This is your motherboard",
+    "isMovable": true,
+    "travelV3": [
+        1,
+        0.5,
+        0.5
+    ],
+    "isMovedByDefault": false,
+    "isParent": true,
+    "components": [
+        {
+            "name": "AMD Ryzen 7900",
+            "path": "/server/lp_cpu.glb",
+            "slot": "slot_cpu_1",
+            "isMonitored": true,
+            "status": "warning",
+            "isSelectable": true,
+            "message": "Detected throttling due to overheating",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+        },
+        {
+            "name": "Intel I9 10900",
+            "path": "/server/lp_cpu.glb",
+            "slot": "slot_cpu_2",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "This CPU is currently ok",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+        },
+        {
+            "name": "AMD Radeon R5 Entertainment Series",
+            "path": "/server/lp_ram.glb",
+            "slot": "slot_ram_1",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "Ram is currently ok",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+        },
+        {
+            "name": "AMD Radeon R5 Entertainment Series",
+            "path": "/server/lp_ram.glb",
+            "slot": "slot_ram_2",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "Ram is currently ok",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+        },
+        {
+            "name": "AMD Radeon R5 Entertainment Series",
+            "path": "/server/lp_ram.glb",
+            "slot": "slot_ram_3",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "Ram is currently ok",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+        },
+        {
+            "name": "AMD Radeon R5 Entertainment Series",
+            "path": "/server/lp_ram.glb",
+            "slot": "slot_ram_4",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "Ram is currently ok",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+        },
+        {
+            "name": "AMD Radeon R5 Entertainment Series",
+            "path": "/server/lp_ram.glb",
+            "slot": "slot_ram_5",
+            "isMonitored": true,
+            "status": "error",
+            "isSelectable": true,
+            "message": "Ram broke",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+        },
+        {
+            "name": "AMD Radeon R5 Entertainment Series",
+            "path": "/server/lp_ram.glb",
+            "slot": "slot_ram_6",
+            "isMonitored": true,
+            "status": "ok",
+            "isSelectable": true,
+            "message": "Ram is currently ok",
+            "isMovable": false,
+            "isMovedByDefault": false,
+            "isParent": false
+        }
+    ]
+}
