@@ -1,4 +1,4 @@
-export interface Module {
+export default interface Module {
     name?: string;
     path: string;
     slot?: string;

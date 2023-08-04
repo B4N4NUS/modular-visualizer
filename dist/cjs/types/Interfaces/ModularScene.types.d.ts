@@ -1,5 +1,5 @@
-import { Module } from "./Module.types";
-export interface ModularScene {
-    sceneName: string | null;
-    models: Array<Module> | null;
+import Module from "./Module.types";
+export default interface ModularScene {
+    sceneName?: string;
+    models: Array<Module>;
 }

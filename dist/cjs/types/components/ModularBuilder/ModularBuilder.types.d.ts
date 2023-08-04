@@ -1,11 +1,11 @@
-import { Module } from "../../Interfaces/Module.types";
-import { StatusEffect } from "../../Interfaces/StatusEffect.types";
+import { Vector3 } from "@react-three/fiber";
+import Module from "../../Interfaces/Module.types";
+import StatusEffect from "../../Interfaces/StatusEffect.types";
 export interface ModularBuilderProps {
-    selection: {
-        get: Module;
-        set: (comp: Module) => void;
-    };
+    selection?: (comp: Module | null) => void;
     models: Array<Module>;
-    statuses: Array<StatusEffect>;
-    position: Array<number>;
+    statuses: StatusEffect[];
+    position?: Vector3;
+    debug?: boolean;
+    selectionEffect?: StatusEffect;
 }

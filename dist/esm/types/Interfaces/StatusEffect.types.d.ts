@@ -1,6 +1,6 @@
-export interface StatusEffect {
-    signature: string;
-    displayMode: string | null;
-    targetRGB: Array<number> | null;
-    speed: number | null;
+export default interface StatusEffect {
+    signature?: string;
+    displayMode?: "blink" | "static" | "fade";
+    targetRGB?: Array<number>;
+    speed?: number;
 }

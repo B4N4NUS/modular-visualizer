@@ -1,2 +1,3 @@
 import React from "react";
-export default function ModularBuilder(props: any): React.JSX.Element;
+import { ModularBuilderProps } from "./ModularBuilder.types";
+export default function ModularBuilder(props: ModularBuilderProps): React.JSX.Element;
