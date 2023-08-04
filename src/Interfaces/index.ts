@@ -1,3 +1,5 @@
-export * from './ModularScene.types'
-export * from './Module.types'
-export * from './StatusEffect.types'
+import ModularScene from './ModularScene.types'
+import Module from './Module.types'
+import StatusEffect from './StatusEffect.types'
+
+export { ModularScene, Module, StatusEffect }
