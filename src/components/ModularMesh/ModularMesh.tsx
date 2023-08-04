@@ -131,11 +131,11 @@ export default function ModularMesh(props: ModularMeshProps) {
 
     // Обработка эффекта детали в каждом фрейме.
     useFrame((state, delta) => {
-        if (!modelRef || !isAnimated) {
+        if (!modelRef) {
             return
         }
 
-        if (props.data.isMonitored && status && modelRef.current && status.displayMode)
+        if (status && modelRef.current && status.displayMode)
             switch (status.displayMode) {
                 case "blink": {
                     if (status.speed && status.targetRGB) {
