@@ -17,9 +17,7 @@
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
-    "@react-spring/three": "^9.7.3",
     "@react-three/drei": "^9.80.1",
-    "@react-three/fiber": "^8.13.6",
     "@rollup/plugin-commonjs": "^25.0.3",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-terser": "^0.4.3",
@@ -34,14 +32,20 @@
     "@storybook/testing-library": "^0.2.0",
     "@types/react": "^18.2.18",
     "@types/three": "^0.155.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "rollup": "^3.27.0",
     "rollup-plugin-dts": "^5.3.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "storybook": "^7.2.0",
-    "three": "^0.155.0",
     "tslib": "^2.6.1",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@react-spring/three": "^9.7.3",
+    "@react-three/fiber": "^8.13.6",
+    "three": "^0.155.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
