@@ -58,6 +58,12 @@ StatusEffect {
 2. static: ```color``` = targetRGB
 3. fade: ```color``` = (sin(deltaTime * speed) * 0.5 + 0.5) * targetRGB
 
+Пример (слева-направо blink, static, fade):
+
+https://github.com/B4N4NUS/modular-visualizer/assets/71143870/e4803fa5-fa1a-4c1e-9d06-d95d4a62bfe0
+
+
+
 ## Новые компоненты
 На данный момент библиотека добавляет 2 новых компонента: ```ModularMesh``` - рекурсивно генерируемый меш и ```ModularBuilder``` - супервизор ModularMesh
 
