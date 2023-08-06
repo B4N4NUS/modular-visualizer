@@ -32,7 +32,7 @@ Module {
     components?: Array<Module> // Массив дочерних деталей.
 }
 ```
-Критически важный тип данных. ```Module``` используется для создания ```ModularBuilder``` и ```ModularMesh```
+Критически важный тип данных. ```Module``` используется для корректной работы ```ModularBuilder``` и ```ModularMesh```
 
 #### 2. ModularScene
 ```ts
@@ -78,7 +78,7 @@ ModularMeshProps {
 Компонент, агрегатор, супервизор и менеджер для ```ModularMesh```
 ```ts
 ModularBuilderProps {
-    selection?: (comp: Module | null) => void; // Функция, в которую будет передаваться информация детали, выбранной пользователем.
+    selection?: (comp: Module | null) => void; // Функция, в которую будет передаваться информация детали, выбранной пользователем.Callback, если по-научному.
     models: Array<Module> // Массив всех деталей задействованных на сцене.
     statuses: Array<StatusEffect> // Описания визуализации статусов, используемых в деталях.
     position?: Vector3 // Изначальное положение "центра" сцены с деталями.
@@ -86,7 +86,7 @@ ModularBuilderProps {
     selectionEffect?: StatusEffect // Эффект, который будет проигрываться при выборе детали.
 }
 ```
-При инициализации заполняет пропущенные необязательные поля props стандартными значениями:
+При инициализации заполняет пропущенные необязательные поля props'ов стандартными значениями:
 ```ts
 position = [0,0,0]
 selection = undefined
@@ -100,6 +100,10 @@ selectionEffect = {
 
 ## Пример использования
 ```ts
+import { useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+
 ...
     const [selectedInfo, setInfo] = useState<Module | null>(null)
     return <>
@@ -115,9 +119,9 @@ selectionEffect = {
                 statuses={shelfStatusInfo} 
                 position={[0, 0, 0]} 
                 selectionEffect={{
-                displayMode: "static",
-                targetRGB: [1, 0.19, 0.2],
-                speed: 10}} 
+                    displayMode: "static",
+                    targetRGB: [1, 0.19, 0.2],
+                    speed: 10}} 
                 selection={setInfo} />
         </Canvas>
     </>
@@ -136,7 +140,7 @@ npm i
 npm run storybook
 ```
 
-## Особенности реализации
+## Подготовка трехмерных объектов перед работой с библиотекой
 Для использования полного функционала библиотеки, вам необходимо использовать корректные трехмерные модели для деталей. 
 
 К моделям предоставляется следуюзий список требований:
