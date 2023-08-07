@@ -4,7 +4,7 @@ MV - компонентная библиотека для визуализаци
 
 В первую очередь, проект разработан для визуализации систем мониторинга серверного оборудования.
 
-https://github.com/B4N4NUS/modular-visualizer/assets/71143870/0396b562-df07-4917-a137-eb6d1afa9458
+https://github.com/B4N4NUS/modular-visualizer/assets/71143870/83239817-aa6e-479f-96f0-518686665c5e
 
 
 
@@ -60,7 +60,7 @@ StatusEffect {
 
 Пример (слева-направо blink, static, fade):
 
-https://github.com/B4N4NUS/modular-visualizer/assets/71143870/e4803fa5-fa1a-4c1e-9d06-d95d4a62bfe0
+https://github.com/B4N4NUS/modular-visualizer/assets/71143870/8b1364ea-046c-4baf-9615-f264718dceaf
 
 
 
@@ -135,7 +135,8 @@ import { OrbitControls } from "@react-three/drei";
 ```
 Результат:
 
-![image](https://github.com/B4N4NUS/modular-visualizer/assets/71143870/f1990f0a-5ba4-4c98-b57e-947a0ad70c71)
+![image](https://github.com/B4N4NUS/modular-visualizer/assets/71143870/69308c41-71ab-4d77-9164-536ab14ef403)
+
 
 
 Более подробные примеры можно найти в директориях с компонентами внутри ```src``` в формате ```storybook```. 
@@ -154,11 +155,12 @@ npm run storybook
 1. Формат glb, либо gltf
 2. Добавление невидимой геометрии / точек (Object3D в R3F) для установления положения слотов на исходной модели. Их названия и положения используются библиотекой для позиционирования дочерних деталей на детали, имеющей эти точки.
 
-![image-1](https://github.com/B4N4NUS/modular-visualizer/assets/71143870/02f213e5-c30a-48d8-8d0d-fbbac3939185)
+![image-1](https://github.com/B4N4NUS/modular-visualizer/assets/71143870/d72fe023-3c05-416b-9332-b314db6d2fc1)
+
 
 В Blender, например, такая геометрия может быть добавлена следующим образом:
 
-![blender_add_clot](https://github.com/B4N4NUS/modular-visualizer/assets/71143870/a747d6d5-38ab-4316-898a-5f90e1b7b8be)
+![image-2](https://github.com/B4N4NUS/modular-visualizer/assets/71143870/be00f5fb-802d-45b0-ac70-66848f9e62a2)
 
 
 
